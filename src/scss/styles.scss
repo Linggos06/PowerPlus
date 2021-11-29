@@ -1,16 +1,18 @@
-@import "fonts";
-
 @mixin font ($font_name, $file_name, $weight, $style) {
 
     @font-face {
         font-family: $font_name;
         font-display: swap;
-        src: url("../fonts/#{$file_name}.woff") format("woff") url("../fonts/#{$file_name}.woff2") format("woff2");
+        src: url("fonts/#{$file_name}.woff") format("woff") url("fonts/#{$file_name}.woff2") format("woff2");
         font-weight: #{$weight};
         font-style: #{$style};
     }
     
 }
+@import "fonts";
+
+$breakpoint-small_desktop: 992px;
+$breakpoint-tablet: 780px;
 
 *{
 	padding: 0;
@@ -30,6 +32,7 @@ nav,footer,header,aside{display: block;}
 html,body{
 	height: 100%;
 	width: 100%;
+	font-family: 'Hurme Geometric Sans 2', sans-serif;
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -50,3 +53,138 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+
+.wrapper {
+	max-width: 1500px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 15px 0 65px;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+
+	& .wrapper {
+		padding-left: 65px;
+	}
+}
+.logo_container {
+	width: calc(60px + (248 - 60) * ((100vw - 320px) / (1920 - 320)));
+	margin-top: calc(30px + (77 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+.logo_container img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	min-width: 150px;
+}
+
+.hero_container {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: url(../img/background.jpg) center/cover no-repeat;
+}
+.hidden {
+	display: none;
+}
+.slogan {
+	position: absolute;
+	width: calc(200px + (500 - 200) * ((100vw - 320px) / (1920 - 320)));
+	max-width: 499px;
+	height: 182px;
+	max-height: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url(../img/slogan.png) center/contain no-repeat;
+}
+.hero_image {
+	position: absolute;
+	background: url(../img/hero_image.png) center/cover no-repeat;
+}
+.social_links {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 8%;
+    z-index: 2;
+    display: flex;
+    width: 155px;
+    height: 45px;
+    @media screen and (max-width: $breakpoint-small_desktop) {
+        bottom: -20px;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+        bottom: -30px;
+    }
+& a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #EA0029;
+    cursor: pointer;
+}
+
+& a:hover{
+    // background-color: $orange;
+    transition: all ease-in-out 0.3s;
+}
+}
+
+.fb_link span {
+    width: 22px;
+    height: 22px;
+    background: url("../img/Facebook_icon.png") center / contain no-repeat; 
+}
+
+.insta_link span {
+    width: 17px;
+    height: 17px;
+    background: url("../img/Instagram_icon.png") center / contain no-repeat;
+}
+
+.ytube_link span {
+    width: 20px;
+    height: 14px;
+    background: url("../img/Youtube_icon.png") center / contain no-repeat;
+}
+.presentation {
+}
+.presentation_header {
+}
+.header_underline {
+}
+.presentation_container {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.slide_1 {
+}
+.slide_item {
+}
+.swiper-slide {
+}
+.slide_2 {
+}
+.slide_3 {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.footer_container {
+}
+.footer_body {
+}
+.footer_logo {
+}
+.trademark {
+}
