@@ -106,7 +106,7 @@ h6 {
 /*--------------------*/
 
 .wrapper {
-  max-width: 1500px;
+  max-width: 1350px;
   height: 100%;
   margin: 0 auto;
   padding: 0 15px 0 65px;
@@ -165,6 +165,15 @@ header .wrapper {
 .hero_image {
   position: absolute;
   background: url(../img/hero_image.png) center/cover no-repeat;
+  width: calc(200px + 380 * (100vw - 320px) / 1600);
+  max-width: 580px;
+  height: 772px;
+  max-height: 100%;
+  top: 50%;
+  left: 63%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .social_links {
@@ -223,14 +232,163 @@ header .wrapper {
   background: url("../img/Youtube_icon.png") center/contain no-repeat;
 }
 
+.presentation {
+  position: relative;
+  width: 100%;
+  max-height: 763px;
+  background-color: #FAFAFA;
+  overflow: hidden;
+}
+
+.presentation .wrapper {
+  width: 100%;
+}
+
+.presentation .presentation_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  height: 50px;
+  margin-top: 133px;
+  margin-bottom: 82px;
+}
+
+.presentation h2 {
+  font-size: 18px;
+}
+
+.presentation h2 .bold {
+  font-weight: 600;
+}
+
+.presentation .header_underline {
+  width: 68px;
+  height: 4px;
+  background-color: #EA0029;
+}
+
+.presentation .swiper-button-prev,
+.presentation .swiper-button-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.presentation .swiper-button-prev:hover,
+.presentation .swiper-button-next:hover {
+  background-color: #EA0029;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.presentation .swiper-button-next {
+  background-image: url("../img/arrow forward.png");
+  top: 50%;
+  right: 10px;
+}
+
+.presentation .swiper-button-prev {
+  background-image: url("../img/arrow backward.png");
+  top: 50%;
+  left: 10px;
+}
+
+.presentation .swiper-button-prev::after,
+.presentation .swiper-button-next::after {
+  content: "";
+}
+
+.presentation .presentation_container {
+  margin-bottom: 20%;
+}
+
+.presentation .slide_item {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.presentation .slide_item.slide_1 {
+  background-color: #F2F2F2;
+}
+
+.presentation .slide_item.slide_2 {
+  background-color: #D6D6D6;
+}
+
+.presentation .slide_item.slide_3 {
+  background-color: #F2F2F2;
+}
+
+.presentation .slide_item.slide_4 {
+  background-color: #F2F2F2;
+}
+
 @media screen and (max-width: 992px) {
   .social_links {
     bottom: -20px;
+  }
+
+  .presentation .swiper-button-prev,
+  .presentation .swiper-button-next {
+    display: none;
+  }
+
+  .presentation .swiper-button-next {
+    top: 55%;
+  }
+
+  .presentation .swiper-button-prev {
+    top: 55%;
   }
 }
 
 @media screen and (max-width: 780px) {
   .social_links {
     bottom: -30px;
+  }
+
+  .presentation .presentation_header {
+    margin-top: 53px;
+    margin-bottom: 32px;
+  }
+
+  .presentation .swiper-button-next {
+    top: 58%;
+  }
+
+  .presentation .swiper-button-prev {
+    top: 58%;
+  }
+
+  .presentation .presentation_container {
+    margin-bottom: 15%;
   }
 }
