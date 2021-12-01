@@ -119,9 +119,9 @@ header {
   & .wrapper {
     padding-left: 65px;
 
-	@media screen and (max-width: $breakpoint-tablet) {
-		padding-left: 15px;
-	}
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding-left: 15px;
+    }
   }
 }
 .logo_container {
@@ -134,25 +134,19 @@ header {
   width: 100%;
   min-width: 100px;
 }
-
-#hero {
-	overflow: hidden;
-}
-
 .hero_container {
   position: relative;
   height: 100vh;
   width: 100%;
   background: url(../img/background.jpg) center/cover no-repeat;
-  overflow: hidden;
 
   & .wrapper {
-	position: relative;
-	overflow: hidden;  
+    position: relative;
+    overflow: hidden;
 
-	@media screen and (max-width: $breakpoint-tablet) {
-		padding-left: 15px;
-	}
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding-left: 15px;
+    }
   }
 }
 .hidden {
@@ -169,17 +163,17 @@ header {
   background: url(../img/slogan.png) center/contain no-repeat;
 
   @media screen and (max-width: $breakpoint-tablet) {
-	left: 20%;
+    left: 20%;
     top: 50%;
     transform: translate(-20%, -50%);
-}
-@media screen and (max-width: 580px) {
-	top: 5%;
-	left: 50%;
+  }
+  @media screen and (max-width: 580px) {
+    top: 5%;
+    left: 50%;
     transform: translate(-10%, -35%);
   }
   @media screen and (max-width: 390px) {
-	transform: translate(-40%, -15%);
+    transform: translate(-40%, -15%);
   }
 }
 .hero_image {
@@ -197,19 +191,18 @@ header {
     left: 69%;
   }
   @media screen and (max-width: $breakpoint-tablet) {
-	left: 70%;
-	
-}
-@media screen and (max-width: 580px) {
-	transform: translate(-95%, -45%);
+    left: 70%;
+  }
+  @media screen and (max-width: 580px) {
+    transform: translate(-95%, -45%);
     height: 620px;
   }
   @media screen and (max-width: 440px) {
-	transform: translate(-85%, -45%);
+    transform: translate(-85%, -45%);
   }
   @media screen and (max-width: 390px) {
-	transform: translate(-75%, -40%);
-	height: 400px;
+    transform: translate(-75%, -40%);
+    height: 400px;
   }
 }
 .social_links {
@@ -221,13 +214,13 @@ header {
   display: flex;
   width: 155px;
   height: 45px;
- 
+
   @media screen and (max-width: $breakpoint-tablet) {
     bottom: 5%;
   }
   @media screen and (max-width: 580px) {
     flex-direction: column;
-	height: 155px;
+    height: 155px;
   }
   & a {
     display: flex;
@@ -240,28 +233,25 @@ header {
     cursor: pointer;
     transition: all 0.5s ease-in-out 0.1s;
 
-	@media screen and (max-width: 580px) {
-		height: 45px;
-	  }
+    @media screen and (max-width: 580px) {
+      height: 45px;
+    }
   }
 
   & a:hover {
-	background-color: rgb(234, 0, 41, 0.6);
+    background-color: rgb(234, 0, 41, 0.6);
   }
 }
-
 .fb_link span {
   width: 22px;
   height: 22px;
   background: url("../img/Facebook_icon.png") center / contain no-repeat;
 }
-
 .insta_link span {
   width: 17px;
   height: 17px;
   background: url("../img/Instagram_icon.png") center / contain no-repeat;
 }
-
 .ytube_link span {
   width: 20px;
   height: 14px;
@@ -273,14 +263,12 @@ header {
   max-height: 763px;
   background-color: #fafafa;
   overflow: hidden;
-
   & .presentation_wrapper {
-	position: relative;
-	  max-width: 1500px;
-	  padding: 0 10px;
-	  margin: 0 auto;
+    position: relative;
+    max-width: 1500px;
+    padding: 0 10px;
+    margin: 0 auto;
   }
-
   & .presentation_header {
     display: flex;
     flex-direction: column;
@@ -290,23 +278,19 @@ header {
     height: 50px;
     margin-top: 133px;
     margin-bottom: 82px;
-
     @media screen and (max-width: $breakpoint-tablet) {
       margin-top: 53px;
       margin-bottom: 32px;
     }
   }
-
   & h2 {
     font-size: 18px;
   }
-
   & .header_underline {
     width: 68px;
     height: 4px;
     background-color: #ea0029;
   }
-
   & .swiper-button-prev,
   & .swiper-button-next {
     display: flex;
@@ -321,35 +305,26 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-	transition: all 1.5s ease 0.1s;
-
-    @media screen and (max-width: $breakpoint-small_desktop) {
-    //   display: none;
-    }
+    transition: all 1.5s ease 0.1s;
   }
-
   & .swiper-button-prev:hover,
   & .swiper-button-next:hover {
     background-color: #ea0029;
-}
-& #arrow_backward,
-& #arrow_forward {
-	transition: all 1.5s ease 0.1s;
-}
-
+  }
+  & #arrow_backward,
+  & #arrow_forward {
+    transition: all 1.5s ease 0.1s;
+  }
   & .swiper-button-prev:hover #arrow_backward,
   & .swiper-button-next:hover #arrow_forward {
-	  fill: #ffffff;
+    fill: #ffffff;
   }
-
   & .swiper-button-next {
     top: 50%;
     right: 50px;
-
     @media screen and (max-width: $breakpoint-small_desktop) {
       top: 55%;
     }
-
     @media screen and (max-width: $breakpoint-tablet) {
       top: 58%;
     }
@@ -373,65 +348,58 @@ header {
 
   & .presentation_container {
     margin-bottom: 20%;
-	max-width: 1140px;
+    max-width: 1140px;
     @media screen and (max-width: $breakpoint-tablet) {
       margin-bottom: 15%;
     }
   }
-
   & .slide_item {
     position: relative;
-	max-width: 270px;
-	width: 100%;
-	// max-height: 100%;
-	height: 270px;
+    max-width: 270px;
+    width: 100%;
+    max-height: 100%;
+    height: 270px;
     overflow: hidden;
-	background-color: #f2f2f2;
-	transition: all 1.7s ease-in-out 0.2s;
+    background-color: #f2f2f2;
+    transition: all 1.7s ease-in-out 0.2s;
 
-	&:hover,
-	&.slide_2:hover {
-		transform: scale(1.1);
-		background-color: #ea0029;
-	}
+    &:hover,
+    &.slide_2:hover {
+      transform: scale(1.1);
+      background-color: #ea0029;
+    }
 
     &.slide_1 {
-    //   background-color: #f2f2f2;
+        & img {
+			position: absolute;
+			width: 270px;
+			object-fit: contain;
+		  }
     }
     &.slide_2 {
       background-color: #d6d6d6;
 
-	  & img {
-		position: absolute;
-		top: -4%;
-		// left: 5%;
-		right: 20px;
-		transform: translate(5%, -5%);
-		max-width: 230px;
-		object-fit: contain;
-		object-position: center;
-	}
+      & img {
+        position: absolute;
+        top: -4%;
+        right: 20px;
+        transform: translate(5%, -5%);
+        max-width: 230px;
+        object-fit: contain;
+        object-position: center;
+      }
     }
     &.slide_3 {
-	  overflow: hidden;
 
-	  & img {
-		  position: absolute;
-		  top: -5px;
-		  width: 270px;
-		  height: 318px;
-		  object-fit: contain;
-	  }
+      & img {
+        position: absolute;
+        top: -5px;
+        width: 270px;
+        height: 318px;
+        object-fit: contain;
+      }
     }
     &.slide_4 {
-
-		& svg {
-			position: relative;
-		}
-    & rect {
-		position: absolute;
-		right: 0;
-	}
     }
   }
 }
@@ -445,10 +413,10 @@ header {
   background: url("../img/footer_background.jpg") center / cover no-repeat;
 
   @media screen and (max-width: 630px) {
-	background-position: 55%;
+    background-position: 55%;
   }
   @media screen and (max-width: 370px) {
-	background-position: 57%;
+    background-position: 57%;
   }
 }
 .footer_body {
@@ -462,7 +430,7 @@ header {
     width: 93%;
   }
   @media screen and (max-width: $breakpoint-tablet) {
-	width: 98%;
+    width: 98%;
   }
 }
 .footer_logo {
@@ -472,22 +440,22 @@ header {
   max-height: 57px;
   height: 100%;
   @media screen and (max-width: $breakpoint-tablet) {
-	width: 134px;
-	background-size: contain;
-	flex-shrink: 1;
+    width: 134px;
+    background-size: contain;
+    flex-shrink: 1;
   }
   @media screen and (max-width: 370px) {
-	width: 104px;
+    width: 104px;
   }
 }
 .trademark {
   height: 100%;
   color: #ffffff;
   @media screen and (max-width: $breakpoint-tablet) {
-	font-size: 12px;
+    font-size: 12px;
   }
   @media screen and (max-width: 608px) {
-	font-size: 9px;
+    font-size: 9px;
   }
 
   & p {
@@ -495,9 +463,9 @@ header {
     height: 100%;
     line-height: 95px;
 
-	@media screen and (max-width: $breakpoint-tablet) {
-		text-align: end;
-		width: 100%;
-	  }
+    @media screen and (max-width: $breakpoint-tablet) {
+      text-align: end;
+      width: 100%;
+    }
   }
 }
