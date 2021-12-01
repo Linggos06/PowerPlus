@@ -173,7 +173,7 @@ header {
     transform: translate(-20%, -50%);
   }
   @media screen and (max-width: 580px) {
-    top: 5%;
+    top: 10%;
     left: 50%;
     transform: translate(-10%, -35%);
   }
@@ -191,21 +191,28 @@ header {
   top: 3%;
   left: 45%;
 
+  @media screen and (max-width: 1200px) {
+    height: 90vh;
+  }
+
   @media screen and (max-width: $breakpoint-tablet) {
     left: 48%;
   }
   @media screen and (max-width: 580px) {
-	top: 10%;
-	left: 27%;
-    height: 550px;
+    top: 10%;
+    left: 27%;
+    // height: 550px;
+    height: 85vh;
   }
   @media screen and (max-width: 440px) {
-	height: 500px;
+    // height: 500px;
+    height: 85vh;
   }
   @media screen and (max-width: 390px) {
-	top: 20%;
-	left: 25%;
-    height: 400px;
+    top: 20%;
+    left: 25%;
+    // height: 400px;
+    height: 75vh;
   }
 }
 .social_links {
@@ -373,11 +380,11 @@ header {
     }
 
     &.slide_1 {
-        & img {
-			position: absolute;
-			width: 270px;
-			object-fit: contain;
-		  }
+      & img {
+        position: absolute;
+        width: 270px;
+        object-fit: contain;
+      }
     }
     &.slide_2 {
       background-color: #d6d6d6;
@@ -393,7 +400,6 @@ header {
       }
     }
     &.slide_3 {
-
       & img {
         position: absolute;
         top: -5px;
@@ -401,8 +407,6 @@ header {
         height: 318px;
         object-fit: contain;
       }
-    }
-    &.slide_4 {
     }
   }
 }
@@ -474,19 +478,19 @@ header {
 }
 
 @keyframes fadeUp {
-	0% {
-		transform: rotate(20deg);
-	}
-	35% {
-		transform: rotate(-13deg);
-	}
-	60% {
-		transform: rotate(7deg);
-	}
-	80% {
-		transform: rotate(-3deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(20deg);
+  }
+  35% {
+    transform: rotate(-13deg);
+  }
+  60% {
+    transform: rotate(7deg);
+  }
+  80% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

@@ -1,7 +1,6 @@
 "use strict";
 
-var swiper = new Swiper('.swiper', {
-  // Optional parameters
+var swiper = new Swiper(".swiper", {
   loop: true,
   grabCursor: true,
   speed: 950,
@@ -27,7 +26,6 @@ var swiper = new Swiper('.swiper', {
       slidesPerView: 2.5,
       spaceBetween: 20
     },
-    // when window width is >= 605px
     768: {
       slidesPerView: 3.2,
       spaceBetween: 20
@@ -36,7 +34,6 @@ var swiper = new Swiper('.swiper', {
       slidesPerView: 3.4,
       spaceBetween: 20
     },
-    // when window width is >= 1070px
     1070: {
       slidesPerView: 4,
       spaceBetween: 20
@@ -48,8 +45,8 @@ var swiper = new Swiper('.swiper', {
   },
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   }
 });
 var date = document.querySelector(".date");
@@ -59,4 +56,4 @@ window.addEventListener("load", function () {
   hero_image.style.animation = "fadeUp 2.5s forwards cubic-bezier(0.6,-0.28,0.74,0.05)";
   var slogan = document.querySelector(".slogan");
   slogan.classList.add("active");
-}); //
+});

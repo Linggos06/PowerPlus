@@ -518,6 +518,12 @@ header .wrapper {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .hero_image {
+    height: 90vh;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .presentation .swiper-button-next {
     top: 55%;
@@ -609,7 +615,7 @@ header .wrapper {
 
 @media screen and (max-width: 580px) {
   .slogan {
-    top: 5%;
+    top: 10%;
     left: 50%;
     -webkit-transform: translate(-10%, -35%);
         -ms-transform: translate(-10%, -35%);
@@ -619,7 +625,7 @@ header .wrapper {
   .hero_image {
     top: 10%;
     left: 27%;
-    height: 550px;
+    height: 85vh;
   }
 
   .social_links {
@@ -637,7 +643,7 @@ header .wrapper {
 
 @media screen and (max-width: 440px) {
   .hero_image {
-    height: 500px;
+    height: 85vh;
   }
 }
 
@@ -651,7 +657,7 @@ header .wrapper {
   .hero_image {
     top: 20%;
     left: 25%;
-    height: 400px;
+    height: 75vh;
   }
 }
 
