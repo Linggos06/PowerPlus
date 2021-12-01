@@ -141,7 +141,6 @@ header {
   background: url(../img/background.jpg) center/cover no-repeat;
 
   & .wrapper {
-    position: relative;
     overflow: hidden;
 
     @media screen and (max-width: $breakpoint-tablet) {
@@ -160,7 +159,13 @@ header {
   max-height: 100%;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0;
   background: url(../img/slogan.png) center/contain no-repeat;
+  transition: opacity 3s ease-in;
+
+  &.active {
+    opacity: 1;
+  }
 
   @media screen and (max-width: $breakpoint-tablet) {
     left: 20%;
@@ -183,25 +188,23 @@ header {
   max-width: 580px;
   height: 772px;
   max-height: 100%;
-  top: 50%;
-  left: 63%;
-  transform: translate(-50%, -50%);
+  top: 3%;
+  left: 45%;
 
-  @media screen and (max-width: $breakpoint-small_desktop) {
-    left: 69%;
-  }
   @media screen and (max-width: $breakpoint-tablet) {
-    left: 70%;
+    left: 48%;
   }
   @media screen and (max-width: 580px) {
-    transform: translate(-95%, -45%);
-    height: 620px;
+	top: 10%;
+	left: 27%;
+    height: 550px;
   }
   @media screen and (max-width: 440px) {
-    transform: translate(-85%, -45%);
+	height: 500px;
   }
   @media screen and (max-width: 390px) {
-    transform: translate(-75%, -40%);
+	top: 20%;
+	left: 25%;
     height: 400px;
   }
 }
@@ -468,4 +471,22 @@ header {
       width: 100%;
     }
   }
+}
+
+@keyframes fadeUp {
+	0% {
+		transform: rotate(20deg);
+	}
+	35% {
+		transform: rotate(-13deg);
+	}
+	60% {
+		transform: rotate(7deg);
+	}
+	80% {
+		transform: rotate(-3deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }

@@ -54,3 +54,9 @@ var swiper = new Swiper('.swiper', {
 });
 var date = document.querySelector(".date");
 date.textContent = new Date().getFullYear();
+window.addEventListener("load", function () {
+  var hero_image = document.querySelector(".hero_image");
+  hero_image.style.animation = "fadeUp 2.5s forwards cubic-bezier(0.6,-0.28,0.74,0.05)";
+  var slogan = document.querySelector(".slogan");
+  slogan.classList.add("active");
+}); //
