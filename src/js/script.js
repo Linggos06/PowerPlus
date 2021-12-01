@@ -12,25 +12,38 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
        // when window width is >= 320px
        320: {
-         slidesPerView: 1.3,
-         spaceBetween: 40
-       },
-       // when window width is >= 605px
-       605: {
-         slidesPerView: 2.3,
+         slidesPerView: 1,
          spaceBetween: 20
        },
-       // when window width is >= 993px
-       993: {
+       620: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+       // when window width is >= 605px
+       768: {
+         slidesPerView: 3,
+         spaceBetween: 20
+       },
+       995: {
+        slidesPerView: 3.4,
+        spaceBetween: 20
+      },
+       // when window width is >= 1070px
+       1070: {
          slidesPerView: 4,
          spaceBetween: 20
-       }
+       },
+       1920: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
      },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
- 
-  
   });
+
+  const date = document.querySelector(".date");
+  date.textContent = new Date().getFullYear();
